@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+  <servlet>
+    <description></description>
+    <display-name>Bai3</display-name>
+    <servlet-name>Bai3</servlet-name>
+    <servlet-class>BT.Bai3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Bai3</servlet-name>
+    <url-pattern>/Bai3</url-pattern>
+  </servlet-mapping>
+  <display-name>Lab2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Bai1</servlet-name>
+    <servlet-class>BT.Bai1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Bai1</servlet-name>
+    <url-pattern>/tamgiac</url-pattern>
+    <url-pattern>/dientich</url-pattern>
+    <url-pattern>/chuvi</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>HitCounterServlet</filter-name>
+    <filter-class>BT.HitCounterServlet</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HitCounterServlet</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
